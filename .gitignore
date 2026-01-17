@@ -1,0 +1,24 @@
+# --- Python Environment ---
+# Excludes the virtual environment where your libraries (Streamlit, Pandas, etc.) are installed
+venv/
+env/
+.env
+
+# --- Python Cache ---
+# Excludes compiled Python files that are created automatically when you run the app
+__pycache__/
+*.pyc
+
+# --- Streamlit Configuration ---
+# Excludes local Streamlit settings and secrets
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# --- Local Data ---
+# Excludes CSV files you use for testing so they don't bloat your GitHub repo
+*.csv
+!example_reviews.csv  # (Optional) Use this if you want to include one small example file
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
